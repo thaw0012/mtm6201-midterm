@@ -1,10 +1,14 @@
 body {
-    font-family: karla;
+    font-family: karla, sans-serif;
     background-color: #f3f0e9;
 }
 
-header nav {
-    font-family: lato;
+#explore-btn, #locations-btn, #learn-more-btn {
+    font-family: karla, sans-serif;    
+}   
+
+h1, h2, h3, nav {
+    font-family: lato, sans-serif;
 }
 
 .wrapper {
@@ -52,9 +56,14 @@ a:active {
     background-repeat: no-repeat;
     position: relative;
     text-align: center;
-    padding-top: 600px;
-    height: 100vh; 
-    width: 100vw;
+    padding-top: 100px;
+    height: 50vh; 
+    width: 87vw;
+}
+
+.hero-bg {
+    background-color:  rgba(0, 0, 0, 0.5);
+    height: 50vh;
 }
 
 .hero, h1 {
@@ -83,17 +92,13 @@ a:active {
     margin: 50px;
 }
 
-.welcome 
-#pouring-latte-img 
-#coffee-beans-img 
-#three-cups-img
-#smiling-employee-img {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 300px;
+.welcome {
+    width: 75vw;
+    margin: 20px;
 }
 
 .welcome h3 {
+    font-weight: bold;
     text-transform: uppercase;
     color: #d69e3d;
     font-size: 22px;
@@ -108,11 +113,23 @@ a:active {
 }
 
 #pouring-latte-img {
-    width: 100vw;
-    margin: 10px;
+    display: grid;
+    width: 80vw;
+}
+
+.welcome-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px;
+}
+
+.offer-imgs {
+    width: 40vw;
+    margin: auto;
 }
 
 #visitus h3 {
+    font-weight: bold;
     text-transform: uppercase;
     text-align: center;
     padding-top: 75px;
@@ -149,10 +166,18 @@ a:active {
     width: 100vw;
 }
 
+.menu-locations-bg {
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+}
+
 .ourmenu h3 {
+    font-weight: bold;
     text-transform: uppercase;
     color: #d69e3d;
     padding-bottom: 25px;
+    padding-top: 50px;
+    width: 80vw;
 }
 
 .ourmenu h2 {
@@ -160,13 +185,16 @@ a:active {
     color: #ffff;
     padding-bottom: 25px;
     font-weight: bold;
+    width: 80vw;
 }
 
 .location h3 {
+    font-weight: bold;
     text-transform: uppercase;
     color: #d69e3d;
     padding-bottom: 25px;
     padding-top: 25px;
+    width: 80vw;
 }
 
 .location h2 {
@@ -174,6 +202,7 @@ a:active {
     color: #ffff;
     padding-bottom: 25px;
     font-weight: bold;
+    width: 80vw;
 }
 
 #locations-btn {
@@ -188,25 +217,35 @@ a:active {
     padding: 25px;
 }
 
+#about-us-img {
+    width: 80vw;
+    padding: 20px;
+}
+
 .aboutus h3 {
+    font-weight: bold;
     text-transform: uppercase;
     color: #d69e3d;
     padding-bottom: 25px;
     padding-top: 25px;
+    padding-left: 20px;
 }
 
 .aboutus h2 {
     text-transform: uppercase;
     color: black;
     padding-bottom: 25px;
+    padding-left: 20px;
     font-weight: bold;
 }
 
 .aboutus p {
     text-align: left;
+    padding-left: 20px;
+    width: 80vw;
 }
 
-#Learn-more-btn {
+#learn-more-btn {
     text-transform: uppercase;
     font-weight: bold;
     font-size: 28px;
@@ -222,22 +261,45 @@ a:active {
     background-color: black;
 }
 
+#testimonial-one {
+    width: 80vw;
+    padding: 20px;
+}
+
+#testimonial-two {
+    width: 80vw;
+    padding: 20px;    
+}
+
+#testimonial-three {
+    width: 80vw;
+    padding: 20px;
+}
+
 .testimonials h3 {
     text-transform: uppercase;
     color: #d69e3d;
     padding-bottom: 25px;
     padding-top: 25px;
+    padding-left: 20px;
+    width: 80vw;
 }
 
 .testimonials h2 {
+    text-transform: uppercase;
     color: #ffff;
     font-size: 28px;
+    padding-bottom: 50px;
+    padding-left: 20px;
+    width: 80vw;
 }
 
 .testimonials p {
     color: #ffff;
     font-size: 16px;
     text-align: left;
+    padding-left: 20px;
+    width: 80vw;
 }
 
 .footer {
@@ -249,18 +311,79 @@ a:active {
 
 /* mobile */
 @media screen and (max-width: 600px) {
+  h1 {
+    font-size: 32px;
+  }
 
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 22px;
+  }
+
+  p {
+    font-size: 16px;
+  }
+
+.welcome {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    margin: auto;
+}
+
+.welcome-imgs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 16px;
+}
+
+#pouring-latte-img {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
 }
 
 /* Tablet */
 @media screen and (min-width: 600px) {
+  h1 {
+    font-size: 48px;
+  }
 
+  h2 {
+    font-size: 38px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
 
 /* Desktop */
 @media screen and (min-width: 1200px) {
+  h1 {
+    font-size: 62px;
+  }
 
+  h2 {
+    font-size: 48px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  p {
+    font-size: 16px;
+  }
 }
-
-
-
