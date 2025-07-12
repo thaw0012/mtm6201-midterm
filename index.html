@@ -3,45 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Coffee House</title>
+    <title>Midterm Project</title>
 
     <link href="css/reset.css" rel="stylesheet"> 
     <link href="css/main.css" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Geo:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&display=swap" rel="stylesheet">
 
 </head>
 <body>
     <div class="wrapper">
         <header>
             <div class="header-bg">
-                <!-- <header class="header-nav" id="main-nav">
-                <div class="logo-bg"> -->
                 <img id="main-logo" src="images/my-coffee-shop-logo.svg" alt="My Coffee House Logo">
-            </div>
             
             <nav>
                 <ul class="nav-bar">
-                    <li><a href="index.html" class="active">My Coffee House</a></li>
+                    <!-- <li><a href="index.html" class="active">My Coffee House</a></li> -->
                     <li><a href="#aboutus">About Us</a></li>
                     <li><a href="#menu">Menu</a></li>
                     <li><a href="#locations">Locations</a></li>
                 </ul>
             </nav>
+            </div>
         </header>
     </div>
 
   <main>
     <section class="hero">
-        <div class="container">
-        <div class="hero-rectangle">
-        <div class="hero-text">
-
-            <img src="images/hero-background.jpg" alt="hero backgroud image" id="hero-background-img">
+            <!-- <img src="images/hero-background.jpg" alt="hero backgroud image" id="hero-background-img"> -->
                 <h1>Experience coffee like never before</h1>
                 <p>We craft more than beverages; we curate memories, one flavorful moment at a time. Embrace the aroma and let every visit be a chapter in your coffee story.</p>
             <button id="explore-btn">Explore our menu</button>
-        </div>
-        </div>
-        </div>
     </section>
     
 
@@ -59,10 +54,12 @@
 
     <section>
         <div id="visit-us-section-bg">
-            <div class="container">
+            <div id="visitus">
         
                 <h3>What we Offer</h3>
+            <div class="whyvisit">   
                 <h2>Why visit us?</h2>
+            </div> 
 
                 <img src="images/fair-trade.svg" alt="fair trade icon" id="fair-trade-icon">
                     <h2>Fair Trade Coffee</h2>
@@ -79,18 +76,33 @@
         </div>
     </section>
 
+    <section id="menu-locations">
+        <img src="images/coffee-shop.jpeg" alt="coffee shop image" id="coffee-shop-img">
+        <div class="ourmenu">
+            <h3>Our Menu</h3>
+            <h2>Explore what we have to offer you</h2>
+            <button id="explore-btn">Explore our menu</button>
+        </div>
+
+        <div class="location">
+            <h3>Locations</h3>
+            <h2>Find your nearest coffee shop</h2>
+            <button id="locations-btn">View Locations</button>
+        </div>
+    </section>
+
     <section class="aboutus">
         <img src="images/about-us.jpeg" alt="about us image" id="about-us-img">
             <h3>About Us</h3>
-            <h1>Read our story</h1>
+            <h2>Read our story</h2>
             <p>In the heart of our community, My Coffee House emerged as a humble local coffee shop that sought to redefine the coffee experience. Founded with a passion for quality brews and a commitment to fostering genuine connections, we embarked on this journey with a vision to create a warm and inviting space for coffee enthusiasts and casual patrons alike</p>
-
+        <br>
             <p>My Coffee House quickly became a cherished gathering spot, where the rich aroma of freshly ground coffee beans mingled with the laughter of friends and the tapping of keyboards from those seeking a cozy workspace.</p>
         <button id="Learn-more-btn">Learn more</button>
     </section>
 
     <!-- customers Section -->
-    <section>
+    <section class="testimonials">
         <h3>Testimonials</h3>
         <h2>What our customers say about us</h2>
         
@@ -116,7 +128,7 @@
   </main>
 
   <footer>
-    <div class="container">
+    <div class="footer">
       <p>&copy; My Coffee Company 2025</p>
     </div>
   </footer>
